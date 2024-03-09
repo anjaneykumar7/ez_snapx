@@ -1,7 +1,7 @@
 name: ez_snapx
-description: A new Flutter package project.
+description: Streamline Flutter development with efficient padding and time conversion
 version: 0.0.1
-homepage:
+homepage: https://github.com/anjaneykumar7/ez_snapx
 
 environment:
   sdk: '>=3.1.4 <4.0.0'
