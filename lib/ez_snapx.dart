@@ -3,19 +3,19 @@ library ez_snapx;
 /// A Calculator
 import 'package:flutter/material.dart';
 
-extension PaddingExtension on double {
-  EdgeInsets get p => EdgeInsets.all(this);
-  EdgeInsets get hp => EdgeInsets.symmetric(horizontal: this);
-  EdgeInsets get vp => EdgeInsets.symmetric(vertical: this);
-  EdgeInsets get bp => EdgeInsets.only(bottom: this);
-  EdgeInsets get tp => EdgeInsets.only(top: this);
-  EdgeInsets get rp => EdgeInsets.only(right: this);
-  EdgeInsets get lp => EdgeInsets.only(left: this);
+extension PaddingExtension on num {
+  EdgeInsets get p => EdgeInsets.all(toDouble());
+  EdgeInsets get hp => EdgeInsets.symmetric(horizontal: toDouble());
+  EdgeInsets get vp => EdgeInsets.symmetric(vertical: toDouble());
+  EdgeInsets get bp => EdgeInsets.only(bottom: toDouble());
+  EdgeInsets get tp => EdgeInsets.only(top: toDouble());
+  EdgeInsets get rp => EdgeInsets.only(right: toDouble());
+  EdgeInsets get lp => EdgeInsets.only(left: toDouble());
 }
 
-extension WidthHeightExtension on double {
-  SizedBox get w => SizedBox(width: this);
-  SizedBox get h => SizedBox(height: this);
+extension WidthHeightExtension on num {
+  SizedBox get w => SizedBox(width: toDouble());
+  SizedBox get h => SizedBox(height: toDouble());
 }
 
 extension TimeConversionExtension on int {
